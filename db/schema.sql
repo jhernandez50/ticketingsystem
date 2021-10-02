@@ -1,0 +1,5 @@
+-- DROP DATABASE
+DROP DATABASE IF EXISTS ticketsystem_db;
+
+-- CREATE DATABASE
+CREATE DATABASE tciketsystem_db;

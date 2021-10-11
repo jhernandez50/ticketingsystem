@@ -1,6 +1,6 @@
 // const Customer = require('./Customer');
 // const Itmember = require('./Itmember');
-const Ticket = require('./Ticket');
+const Ticket = require('./ticket');
 const User=require('./User');
 const Service=require('./Service');
 // Ticket belongsTo Customer

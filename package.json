@@ -1,5 +1,5 @@
 {
-  "name": "ticketingsystem",
+  "name": "Project22",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,21 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhernandez50/ticketingsystem.git"
+    "url": "git+https://github.com/jhernandez50/project22.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jhernandez50/ticketingsystem/issues"
+    "url": "https://github.com/jhernandez50/project22/issues"
   },
-  "homepage": "https://github.com/jhernandez50/ticketingsystem#readme",
+  "homepage": "https://github.com/jhernandez50/project22#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
+    "moment": "^2.29.1",
     "mysql2": "^2.3.0",
-    "sequelize": "^6.7.0"
+    "sequelize": "^6.6.5"
   }
 }

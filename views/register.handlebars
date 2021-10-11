@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>Register</h1>
+</div>
+<div class="section container">
+    <div class="row">
+        <form id="form-register" class="col s12">
+            <div class="row card-panel">
+              <div class="input-filed col s6 mb-20">
+                <label for="firstName">First Name:</label>
+                <input name="firstName" type="text" placeholder="Ingresa tu nombre" class="validate" required>
+              </div>
+              <div class="input-filed col s6 mb-20">
+                <label for="lastName">Last Name:</label>
+                <input name="lastName" type="text" placeholder="Ingresa tu nombre" class="validate" required>
+              </div>
+            <div class="input-filed col s12 mb-20">
+                <label for="email">Email:</label>
+                <input name="email" type="email" placeholder="Ingresa tu correo">
+            </div>
+              <div class="input-filed col s6 mb-20">
+                <label for="password">Password:</label>
+                <input name="password" type="text" placeholder="Ingresa tu apellido" class="validate" required>
+              </div>
+             <div class="input-filed col s6 mb-20">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input name="confirmPassword" type="text" placeholder="Ingresa tu apellido" class="validate" required>
+              </div>
+              <div class="col s12 mb-20">
+             <p>
+               <label for="">Register as:</label>
+              <label>
+                <input name="user-type" value="IT-member" type="radio" checked />
+                <span>IT member</span>
+              </label>
+              <label>
+                <input name="user-type" value="customer" type="radio"/>
+                <span>Customer</span>
+              </label>
+              </p>
+              </div>
+              <button class="btn" type="submit">Submit</button>
+              <span id="span-message" class="badge d-none" data-badge-caption="custom caption">4</span>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Create Ticket</h1>
+    <span id="span-message" class="custom-badge d-none"></span>
+    <a href="/create-ticket" class="btn-message light d-none">Add more services</a>
+    <a href="/my-tickets" class="btn-message dark d-none">Home</a>
+</div>
+<div class="section container">
+    <div class="row">
+        <form id="form-add-ticket" class="col s12">
+            <div class="row card-panel">
+              <div class="input-filed col s6 mb-20">
+                <label for="title">Title:</label>
+                <input name="title" type="text" placeholder="Need title" class="validate" required>
+              </div>
+              <div class="input-filed col s12 mb-20">
+                <label for="description">Description:</label>
+                <input name="description" type="text" placeholder="Describe your need here...">
+              </div>
+              <div class="input-filed col s12 mb-20">
+                <label for="phone">Phone #:</label>
+                <input name="phone" type="text" placeholder="Describe your need here...">
+              </div>
+              <div class="col s12 mb-20">
+              <p>
+              <label for="">Ticket Type:</label>
+              <label>
+                <input name="ticket-type" value="product" type="radio" checked />
+                <span>Product</span>
+              </label>
+              <label>
+                <input name="ticket-type" value="service" type="radio"/>
+                <span>Service</span>
+              </label>
+              </p>
+              </div>
+               <div class="col s12 mb-20">
+                    <button class="btn" type="submit">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

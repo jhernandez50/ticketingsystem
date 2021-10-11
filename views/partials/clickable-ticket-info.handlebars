@@ -1,0 +1,17 @@
+<div class="col s4">
+                <div id="{{id}}" class="card clickable">
+                    
+                    <div class="card-content">
+                        <span class="card-title">{{title}}</span>
+                        <ul>
+                         <li>Created on: {{date}}</li> 
+                         <li>Type: {{ticket_type}}</li>
+                         {{#if assigned}}
+                         <li>Resolved: <span class="custom-badge badge-sm green">Yes</span></li>
+                         {{else}}
+                         <li>Resolved: <span class="custom-badge badge-sm red">No</span></li>
+                         {{/if}} 
+                        </ul>
+                    </div>
+                </div>
+</div>

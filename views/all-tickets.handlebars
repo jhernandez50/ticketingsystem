@@ -1,0 +1,13 @@
+ <div class="container section">
+        <h1>Tickets</h1>
+        <div class="row">
+            {{#if tickets}}
+            {{#each tickets as |ticket|}}
+            {{>clickable-ticket-info ticket}}
+            {{/each}}
+            {{else}}
+            <h2 >No tickets added yet</h2>
+            {{/if}}
+            
+        </div>
+    </div>

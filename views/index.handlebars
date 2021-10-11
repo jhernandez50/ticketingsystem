@@ -1,0 +1,35 @@
+<div class="container">
+          <div class="row  grey lighten-3 z-depth-3">
+            <div class="col s4">
+              {{#if (isMatch session.userType "Customer")}}
+              <a href="/create-ticket" class="panel-link">
+                <span class="card-title white-text">
+                  Add Ticket
+                </span>
+              </a>
+              <div class="divider"></div>
+               <a href="/my-tickets" class="panel-link">
+                <span class="card-title white-text">
+                  My Tickets
+                </span>
+              </a>
+              {{else}}
+              <a href="/add-service" class="panel-link">
+                <span class="card-title white-text">
+                  Add Service
+                </span>
+              </a>
+              <a href="/assigned-tickets" class="panel-link">
+                <span class="card-title white-text">
+                  Assigned Tickets
+                </span>
+              </a>
+              {{/if}}
+            </div>
+            <div class="col s8">
+                <img src="https://images.pexels.com/photos/4065868/pexels-photo-4065868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ticket" style="width:100%;height:100% ;">
+            </div>
+            </div>
+          </div>
+  </div>
+      

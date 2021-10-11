@@ -1,0 +1,25 @@
+ 
+ <div class="container">
+ <h3>All IT Members</h3>
+    
+  <table class="centered">
+        <thead>
+          <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#if members}}
+            {{#each members as |member|}}
+            {{>member-info member}}
+            {{/each}}
+            {{else}}
+            <tr>
+                <td colspan="3"><h3>No member added yet.</h3></td>
+            </tr>
+            {{/if}}
+         </tbody>
+    </table>
+</div>

@@ -28,5 +28,6 @@ router.get('/customers',[withAuth],[adminCont.getCustomers])
 router.get('/IT-members',[withAuth],[adminCont.getMembers])
 router.get('/manage-tickets',[withAuth],[adminCont.getTickets])
 router.get('/service-detail/:ticketId',[withAuth],[adminCont.getServiceDetail])
+router.get('/assigned-tickets',[withAuth],[ticketCont.getAssignedTickets])
 
 module.exports = router;

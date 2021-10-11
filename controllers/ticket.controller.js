@@ -41,7 +41,32 @@ const getTickets=(req,res)=>{
 
     })
 }
+const getAssignedTickets=(req,res)=>{
+    Ticket.findAll({
+        where:{
+            itmember_id:req.session.user_id,
+            assigned:true
+        }
+    })
+    .then(ticketData=>{
+
+        let tickets=ticketData.map(ticket=>ticket.get({plain:true}))
+        tickets=tickets.map(ticket=>{
+            ticket.date=moment(ticket.createdAt).format("MM-DD-YYYY")
+            return ticket
+        }
+        )
+        console.log(tickets);
+        res.render('my-tickets',{tickets:tickets});
+    })
+    .catch(err=>{
+        console.log(err);
+        res.redirect('login')
+
+    })
+}
 module.exports={
     createTicket,
-    getTickets
+    getTickets,
+    getAssignedTickets
 }

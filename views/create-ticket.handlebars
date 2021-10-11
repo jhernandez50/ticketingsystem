@@ -1,8 +1,12 @@
 <div class="container">
     <h1>Create Ticket</h1>
     <span id="span-message" class="custom-badge d-none"></span>
-    <a href="/create-ticket" class="btn-message light d-none">Add more services</a>
-    <a href="/my-tickets" class="btn-message dark d-none">Home</a>
+    <a href="/create-ticket" class="btn-message light d-none">Add more tickets</a>
+    {{#if (isMatch session.userType "Admin")}}
+    <a href="/dashboard" class="btn-message dark d-none">Home</a>
+    {{else}}
+    <a href="/" class="btn-message dark d-none">Home</a>
+  {{/if}}
 </div>
 <div class="section container">
     <div class="row">
